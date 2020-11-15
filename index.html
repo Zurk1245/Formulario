@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Survey form</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">  
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="container">                     
+            <div id="title-and-description">
+                <h1 id="title">¿Actividad física?</h1>
+                <p id="description">Realice el siguiente formulario sobre la actividad física</p>
+            </div>    
+
+            <div id="formulario">
+                <form id="survey-form">
+                    <label id="name-label" for="name">Nombre:</label> <br>
+                    <input id="name" type="text" placeholder="Nombre y apellido" class="cosas__formulario" required> <br><br>
+
+                    <label id="email-label" for="email">Mail:</label> <br>
+                    <input id="email" type="email" placeholder="e-mail personal" class="cosas__formulario" required> <br><br>
+
+                    <label id="number-label" for="number">Edad:</label> <br>
+                    <input id="number" type="number" placeholder="Años que tienes" min="1" max="150" class="cosas__formulario" required> <br><br>
+
+                    <label id="frequency-label" for="dropdown">¿Con que frecuencia realiza actividad física?:</label> <br>
+                    <select id="dropdown" class="cosas__formulario" required> 
+                        
+                        <option value="1 o 2 veces por semana">1 o 2 veces por semana</option>
+                        <option value="3 o 4 veces por semana">3 o 4 veces por semana</option>
+                        <option value="Más de 4 veces por semana">Más de 4 veces por semana</option>
+                        <option value="Nunca realizo actividad física">Nunca realizo actividad física</option>
+                        
+                    </select> <br><br>
+
+                    <label id="place-label" for="radio">¿Donde realiza la actividad? (opcional)</label> <br>
+                    <input id="radio" type="radio" name="lugar" value="En mi casa">En mi casa <br>
+                    <input id="radio" type="radio" name="lugar" value="En un gimnasio">En un gimnasio <br>
+                    <input id="radio" type="radio" name="lugar" value="Al aire libre">Al aire libre <br>
+                    <input id="radio" type="radio" name="lugar" value="En un club">En un club <br> <br>
+
+                    <label id="place-label" for="radio">¿Que grupo/s muscular/es trabaja durante la actividad?</label> <br>
+                    <input id="checkbox" type="checkbox" name="zona-de-trabajo" value="Espalda">Espalda <br>
+                    <input id="checkbox" type="checkbox" name="zona-de-trabajo" value="Pecho">Pecho <br>
+                    <input id="checkbox" type="checkbox" name="zona-de-trabajo" value="Hombro">Hombro <br>
+                    <input id="checkbox" type="checkbox" name="zona-de-trabajo" value="Brazo">Brazo <br>
+                    <input id="checkbox" type="checkbox" name="zona-de-trabajo" value="Cadera">Cadera <br>
+                    <input id="checkbox" type="checkbox" name="zona-de-trabajo" value="Muslo">Muslo <br>
+                    <input id="checkbox" type="checkbox" name="zona-de-trabajo" value="Pierna">Pierna <br>
+                    
+
+                    <label id="opinion-label" for="opinion">¿Tiene alguna opinión adicional sobre la actividad física? (opcional)</label> <br>
+                    <textarea id="opinion" name="opinión" placeholder="Ingrese su opinión aquí" class="cosas__formulario"></textarea> <br><br>
+
+                    <button id="submit" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>            
+
+    </body>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
